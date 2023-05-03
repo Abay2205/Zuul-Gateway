@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CRUD/CRUD.iml" filepath="$PROJECT_DIR$/CRUD/CRUD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CRUD2/CRUD2.iml" filepath="$PROJECT_DIR$/CRUD2/CRUD2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Crud3/Crud3.iml" filepath="$PROJECT_DIR$/Crud3/Crud3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Store.iml" filepath="$PROJECT_DIR$/.idea/Store.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZuulGateway/ZuulGateway.iml" filepath="$PROJECT_DIR$/ZuulGateway/ZuulGateway.iml" />
+    </modules>
+  </component>
+</project>

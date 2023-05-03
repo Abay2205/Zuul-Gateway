@@ -1,0 +1,43 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /zuul
+
+zuul:
+  routes:
+    CRUD:
+      path: /back2/**
+      url: http://localhost:8090/
+    CRUD2:
+      path: /back1/**
+      url: http://localhost:8080/
+    CRUD3:
+      path: /back3/**
+      url: http://localhost:8070/
+    KANBAN:
+      path: /back10/**
+      url: http://localhost:8010/
+
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/usersGatewayDb
+    username: postgres
+    password: root
+  
+  ##JPA config
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#application:
+#  jwt:
+#    secretKey: securesecuresecuresecuresecuresecuresecuresecuresecuresecure
+#    tokenPrefix: 'Bearer '
+#    tokenExpirationAfterDays: 10
